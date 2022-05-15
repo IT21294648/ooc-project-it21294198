@@ -1,30 +1,3 @@
-
-
-
-Payment payment1;
-Payment payment2('B',1001,"Card",500.00);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #include "Date.h"
 #include<cstring>
 
