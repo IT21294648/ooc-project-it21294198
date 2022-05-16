@@ -37,8 +37,8 @@ int main() {
     RequestPost requestPost;
     RequestPost requestPost(500000,35,"33/5B Bhagya Road, Colombo", 0003 , "Nimal Perera" );
 
-    Salepost salePost();
-    Salepost SalePost( 600000,550000,60,35,5, 1  ,"Kamal Fernando" ) 
+    SalePost SalePost();
+    SalePost SalePost( 600000,550000,60,35,5, 1  ,"Kamal Fernando" ); 
         
      //user
     User user1;
