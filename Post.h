@@ -44,7 +44,7 @@ public:
 	void setPostDetails(int pid,const char title[30],const char locate[30],const char descript[100],const char city[30],const char district[30],const char province[30]);
 	void addComplaints(Complaint *c1,Complaint *c2);
 	void addDate();
-	void addpostType(Post_Type *p1);
+	void addpostType(Post_Type *pType1);
 	void addPhotos(Photo *p1,Photo *p2,Photo *p3,Photo *p4,Photo *p5);
 	void displayPostDetails();
 	void receivePayment(Payment payment);
