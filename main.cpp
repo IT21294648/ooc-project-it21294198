@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Post.h"
 #include "SalePost.h"
@@ -29,7 +30,7 @@ int main() {
     PostType postType2(1, 2000.00, "featured", "The post will be displayed on top of the home page");
 
     Moderator mod1;
-    Moderator mod2(005,"Sunil Perera","1001","sunilp","password123");
+    Moderator mod2(0005, "Sunil", "No 89, Kandy Road, Kandy", "sunilp@gmail.com",  "password123", "hello world", "Valid", new Photo());
 
     Post post1;
     Post post2(001,"Land for Sale in Katugasthota","6.9291N,79.9828E","12 Acre Land is available for sale closer to Kandy Town. Price Negotiable","Katugasthota","Kandy","Central Province");
