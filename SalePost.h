@@ -35,7 +35,7 @@ public :
 	void setPriceRange( float smaxPrice  , float sminPrice ); 
 	void setAreaRange( float smaxArea  , float sminArea ); 
 	void setRPdetails ( int sdistance ,  int spostId  ,User *suser, date sdate , photo sphotos[10] );
-	void displayRPdetails() 
-      ~SalePost()
+	void displayRPdetails();
+      ~SalePost();
 };
 
