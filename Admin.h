@@ -1,49 +1,26 @@
-#include <cstring>
-#include "Photo.h"
-
-class User
+class Admin : public Moderator
 {
-protected:
-	int userID;
-	char name[25];
-	char address[100];
-	char email[50];
-	char password[50];
-	char about[400];
-	char status[10];
-	Photo*image;
+private:
+	int adminID;
+	char adminName[25];
 	
 public:
-	User()
+	admin()
 	{
-		userID = 00000;
-		strcpy(name, "Default");
-		strcpy(address, "Default");
-		strcpy(email, "Default");
-		strcpy(password, "Default");
-		strcpy(about, "Default");
-		status(status, "Default");
-		image = new Photo();
+		adminID=0000;
+		strcpy(adminID, "Default");
 	};
 	
-	User(int pUid, const char pName[50], const char pAddress[100], const char pEmail[50]
-			const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage )
-			{
-				userID = pUid;
-				strcpy(name, pName);
-				strcpy(address, pAddress);
-				strcpy(email, pEmail);
-				strcpy(password, pass);
-				strcpy(about, pAbout);
-				strcpy(status, pStatus);
-				image = pImage
-			};
-			
-	void setDetails(int pUid, const char pName[50], const char pAddress[100], const char pEmail[50]
-			const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage );
-	void makePayment(Payment payment);
-	void getUserDetails();
-	void viewPost(Post post);
-	~User();
+	admin(int pUid), const char pName[25], const char pEmail[50]
+	const char pass[50]) : User(pUid, pName, pEmail, pass)
+	{
+		adminID = pUid;
+		strcpy(adminName, aName);
+	};
 	
+	void addModerator();
+	void removeModerator();
+	void getDetails();
+	void manageModerator(moderator moderator);
+	~Admin();
 };
