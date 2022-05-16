@@ -11,7 +11,7 @@ public:
 		strcpy(adminID, "Default");
 	};
 	
-	admin(int pUid), const char pName[25], const char pEmail[50]
+	admin(int pUid, const char pName[25], const char pEmail[50]
 	const char pass[50]) : User(pUid, pName, pEmail, pass)
 	{
 		adminID = pUid;
