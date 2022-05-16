@@ -15,7 +15,7 @@ public:
            {
             price=0.0;
             landArea=0.0
-            strcopy(address,"default")
+            strcpy(address,"default")
            };
 
 	     RequestPost(float rprice,float rlandArea,const char raddress[100], int postId , User *user )
