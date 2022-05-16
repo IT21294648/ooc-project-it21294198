@@ -46,5 +46,5 @@ int main() {
 
     //admin
     Admin admin1;
-    Admin admin2(0001, "Kamal", "iamadmin@gmail.com", "abc123ADm1n");
+    Admin admin2(0001, "Kamal", "No 89, Kandy Road, Kandy", "iamadmin@gmail.com",  "abc123ADm1n", "hi im kamal", "Valid", new Photo());
 }
