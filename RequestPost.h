@@ -27,6 +27,6 @@ public:
            };
       void setSPdetails (float rprice , float rlandarea, string raddress  , int rpostId , User *ruser ,  date  rdate, photo rphotos[10]);
 	void displaySPdetails();
-      ~RequestPost()
+      ~RequestPost();
 };
 
