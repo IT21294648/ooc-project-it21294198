@@ -1,6 +1,6 @@
-#include "post.h"
+#include "Post.h"
 #include "Date.h"
-#include "Post_Type.h"
+#include "PostType.h"
 #include <cstring>
 class RequestPost: public Post
 {

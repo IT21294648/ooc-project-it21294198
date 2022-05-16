@@ -1,6 +1,6 @@
 #include "Post.h"
 #include "Date.h"
-#include "Post_Type.h"
+#include "PostType.h"
 #include <cstring>
 
 class SalePost: public Post
