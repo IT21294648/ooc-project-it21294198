@@ -24,7 +24,7 @@ public :
             };
 
 	SalePost( float smaxPrice,float sminPrice,float smaxArea,float sminArea,int sdistance, int pId  ,User *suser )
-      : Post(pId,*suser,title[30],locate[30],descript[100],city[30],district[30],province[30])
+      : Post( postId, Title[30], location[30], Province[30], description[100], City[30], District[30], photos[5], date, *complaint[2],*postType[1],*user)
             {
              maxPrice=smaxPrice;
              minPrice=sminPrice;
