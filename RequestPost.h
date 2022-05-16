@@ -23,7 +23,7 @@ public:
            {
             price=rprice;
             landArea=rlandArea;
-            strcopy(address,raddress);
+            strcpy(address,raddress);
            
 
            };
