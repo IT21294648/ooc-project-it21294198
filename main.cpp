@@ -19,6 +19,7 @@ int main() {
     Complaint complaint1;
     Complaint complaint2(1, "false information", "The seller has provided wrong details about the sale", new Date(15,5,2022), true, new User(), new Post());
 
+  
     Date date1;
     Date date2(14,5,2022);
 
