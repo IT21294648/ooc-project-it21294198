@@ -4,7 +4,7 @@
 #include "User.h"
 #include "Photo.h"
 #include <cstring>
-Class Post{
+class Post{
 protected:
 	int postId;
 	char Title[30];
