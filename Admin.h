@@ -9,14 +9,13 @@ private:
 	char adminName[25];
 	
 public:
-	admin()
+	Admin()
 	{
 		adminID=0000;
-		strcpy(adminID, "Default");
+		strcpy(adminName, "Default");
 	};
 	
-	admin(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50]
-		const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage) : Moderator(pUid, pName, pAddress, pEmail, pass, pAbout, pStatus);
+	Admin(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50], const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage) : Moderator(pUid, pName, pAddress, pEmail, pass, pAbout, pStatus)
 	{
 		adminID = pUid;
 		strcpy(adminName, aName);
