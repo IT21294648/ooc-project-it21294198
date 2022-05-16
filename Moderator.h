@@ -1,6 +1,6 @@
 #include "Date.h"
 #include "Complaint.h"
-#include "Post_Type.h"
+#include "PostType.h"
 #include "User.h"
 #include "Photo.h"
 #include <cstring>
