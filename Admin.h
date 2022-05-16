@@ -1,16 +1,18 @@
 #include "Moderator.h"
+#include <cstring>
+#pragma once
 
 class Admin : public Moderator
 {
 private:
 	int adminID;
-	char adminName[25];
+	char adminID[25];
 	
 public:
 	admin()
 	{
 		adminID=0000;
-		strcpy(adminID, "Default");
+		strcpy(adminName, "Default");
 	};
 	
 	admin(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50]
@@ -23,6 +25,6 @@ public:
 	void addModerator();
 	void removeModerator();
 	void getDetails();
-	void manageModerator(moderator moderator);
+	void manageModerator(Moderator moderator);
 	~Admin();
 };
