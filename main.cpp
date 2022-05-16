@@ -39,4 +39,12 @@ int main() {
 
     Salepost salePost();
     Salepost SalePost( 600000,550000,60,35,5, 1  ,"Kamal Fernando" ) 
+        
+     //user
+    User user1;
+    User (00001, "Nimal", "No 68, Colombo Road, Colombo", "nimal007@gmail.com", "Fak3pa44w0rd", "hi I'm Nimal", "Valid", new Photo());
+
+    //admin
+    Admin admin1;
+    Admin (0001, "Kamal", "iamadmin@gmail.com", "abc123ADm1n");
 }
