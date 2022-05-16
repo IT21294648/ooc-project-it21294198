@@ -1,5 +1,6 @@
 #include <cstring>
 #include "Photo.h"
+#pragma once
 
 class User
 {
