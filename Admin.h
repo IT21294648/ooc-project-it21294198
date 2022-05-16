@@ -1,4 +1,6 @@
 #include "Moderator.h"
+#include <cstring>
+#pragma once
 
 class Admin : public Moderator
 {
@@ -23,6 +25,6 @@ public:
 	void addModerator();
 	void removeModerator();
 	void getDetails();
-	void manageModerator(moderator moderator);
+	void manageModerator(Moderator moderator);
 	~Admin();
 };
