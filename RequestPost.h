@@ -19,7 +19,7 @@ public:
            };
 
 	     RequestPost(float rprice,float rlandArea,const char raddress[100], int postId , User *user )
-            : Post(pId,*suser,title[30],locate[30],descript[100],city[30],district[30],province[30])
+            : Post( postId, Title[30], location[30], Province[30], description[100], City[30], District[30], photos[5], date, *complaint[2],*postType[1],*user)
            {
             price=rprice;
             landArea=rlandArea;
