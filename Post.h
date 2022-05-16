@@ -1,3 +1,4 @@
+#pragma once
 #include "Date.h"
 #include "Complaint.h"
 #include "PostType.h"
