@@ -5,7 +5,7 @@
 #include "Photo.h"
 #include <cstring>
 
-Class Moderator : public User{
+class Moderator : public User{
 protected:
 	int modId;
 	char modName[30];
