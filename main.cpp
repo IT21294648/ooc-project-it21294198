@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include "Post.h"
 #include "SalePost.h"
