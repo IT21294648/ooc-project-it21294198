@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Post.h"
 #include "Date.h"
 #include "PostType.h"
