@@ -35,9 +35,9 @@ int main() {
     Post post2(001,"Land for Sale in Katugasthota","6.9291N,79.9828E","12 Acre Land is available for sale closer to Kandy Town. Price Negotiable","Katugasthota","Kandy","Central Province");
 
     RequestPost requestPost1;
-    RequestPost requestPost2(500000,35,"33/5B Bhagya Road, Colombo", 0003 , "Nimal Perera" );
+    RequestPost requestPost2(500000,35,"33/5B Bhagya Road, Colombo", 0003 , "Land for Sale in Colombo", "Colombo5","Prime piece of land in colombo","Colombo5","Colombo","Western Province",new Photo(),new Date(9,5,2022)," ","1","Nimal Perera");
 
-    SalePost SalePost1;
+    SalePost salepost1;
     SalePost salepost2( 600000,550000,60,35,5, 001  ,"Land for Sale Gamapaha","7.0840° N, 80.0098° E","Land for Sale","Gampaha","Gampaha","Western Province", new Photo(),new Date(10,5,2022)," ","1","Kamal Fernando" );
         
      //user
