@@ -50,7 +50,7 @@ public:
 	void displayPostDetails();
 	void receivePayment(Payment payment);
 	~Post();
-}
+};
 
 
 
