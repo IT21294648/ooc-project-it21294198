@@ -18,7 +18,7 @@ public:
 	Admin(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50], const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage) : Moderator(pUid, pName, pAddress, pEmail, pass, pAbout, pStatus)
 	{
 		adminID = pUid;
-		strcpy(adminName, aName);
+		strcpy(adminName, pName);
 	};
 	
 	void addModerator();
