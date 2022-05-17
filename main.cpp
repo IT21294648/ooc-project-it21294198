@@ -19,7 +19,6 @@ int main() {
     Complaint complaint1;
     Complaint complaint2(1, "false information", "The seller has provided wrong details about the sale", new Date(15,5,2022), true, new User(), new Post());
 
-  
     Date date1;
     Date date2(14,5,2022);
 
@@ -39,7 +38,7 @@ int main() {
     RequestPost requestPost2(500000,35,"33/5B Bhagya Road, Colombo", 0003 , "Nimal Perera" );
 
     SalePost SalePost1;
-    SalePost SalePost2( 600000,550000,60,35,5, 1  ,"Kamal Fernando" ); 
+    SalePost SalePost2(600000,550000,60,35,5, 1  ,"Kamal Fernando" ); 
         
      //user
     User user1;
