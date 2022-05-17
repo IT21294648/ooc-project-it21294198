@@ -35,11 +35,11 @@ int main() {
     Post post1;
     Post post2(001,"Land for Sale in Katugasthota","6.9291N,79.9828E","12 Acre Land is available for sale closer to Kandy Town. Price Negotiable","Katugasthota","Kandy","Central Province");
 
-    RequestPost requestPost;
-    RequestPost requestPost(500000,35,"33/5B Bhagya Road, Colombo", 0003 , "Nimal Perera" );
+    RequestPost requestPost1;
+    RequestPost requestPost2(500000,35,"33/5B Bhagya Road, Colombo", 0003 , "Nimal Perera" );
 
-    SalePost SalePost();
-    SalePost SalePost( 600000,550000,60,35,5, 1  ,"Kamal Fernando" ); 
+    SalePost SalePost1;
+    SalePost SalePost2( 600000,550000,60,35,5, 1  ,"Kamal Fernando" ); 
         
      //user
     User user1;
