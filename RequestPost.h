@@ -14,8 +14,8 @@ public:
 	     RequestPost()
            {
             price=0.0;
-            landArea=0.0
-            strcpy(address,"default")
+            landArea=0.0;
+            strcpy(address,"default");
            };
 
  RequestPost(float rprice,float rlandArea,const char raddress[100],int pid,const char title[30],const char locate[30],const char descript[100],const char city[30]
