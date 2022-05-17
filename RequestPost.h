@@ -26,7 +26,7 @@ public:
             landArea=rlandArea;
             strcpy(address,raddress);
            };
-      void setSPdetails (float rprice , float rlandarea, string raddress  , int rpostId , User *ruser ,  date  rdate, photo rphotos[10]);
+      void setSPdetails (float rprice , float rlandarea, const char raddress  , int rpostId , User *ruser ,  Date  rdate, Photo rphotos[10]);
 	void displaySPdetails();
       ~RequestPost();
 };
