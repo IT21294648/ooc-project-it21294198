@@ -25,7 +25,7 @@ public :
 
 SalePost( float smaxPrice,float sminPrice,float smaxArea,float sminArea,int sdistance,int pid,const char title[30],const char locate[30],const char descript[100]
 ,const char city[30],const char district[30],const char province[30],Photo sphotos[5],Date sdate,Complaint *scomplaint[2],PostType *spostType[1],User *suser)
-	: Post( pid, title[30], locate[30], descript[100],city[30], district[30],province[30],sphotos[5],sdate,*scomplaint[2],*spostType[1],*suser )
+	: Post( pid, title, locate, descript,city, district,province,rphotos,rdate,rcomplaint,rpostType,ruser)
             {
              maxPrice=smaxPrice;
              minPrice=sminPrice;
