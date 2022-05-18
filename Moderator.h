@@ -15,7 +15,7 @@ public:
 	Moderator(){
 		modId=0;
 		strcpy(modName,"Default");
-	};
+	}
 	Moderator(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50], const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage) : User(pUid, pName, pAddress, pEmail, pass, pAbout, pStatus,pImage)
 	{
 		modId=pUid;

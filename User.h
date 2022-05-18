@@ -28,7 +28,7 @@ public:
 		strcpy(about, "Default");
 		strcpy(status, "Default");
 		image = new Photo();
-	};
+	}
 	
 	User(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50], const char pass[50], const char pAbout[400], const
 char pStatus[10], Photo*pImage)
@@ -41,7 +41,7 @@ char pStatus[10], Photo*pImage)
 				strcpy(about, pAbout);
 				strcpy(status, pStatus);
 				image = pImage;
-  };
+  }
 			
 	void setDetails(int pUid, const char pName[25], const char pAddress[100], const char pEmail[50], const char pass[50], const char pAbout[400], const char pStatus[10], Photo*pImage);
 	void makePayment(Payment payment);

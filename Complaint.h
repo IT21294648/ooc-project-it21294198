@@ -1,46 +1,39 @@
 #pragma once
-#include "Date.h"
-#include "Post.h"
-#include "User.h"
 #include <cstring>
+#include "Date.h"
+#include "User.h"
+class Complaint{
+private:
+	int id;
+	char type[50];
+	char description[500];
+	Date* date;
+	bool reviewed;
+	User* owner;
 
-class Complaint
-{
-	private:
-		int complaintID;
-		char complaintType[20];
-		char description[500];
-		Date *date;
-		bool reviewed;
-		User* owner;
-		Post* post;
+public:
+	Complaint(){
+		id = 0;
+		strcpy(type,"default");
+		strcpy(description,"default");
+		date = new Date();
+		reviewed = false;
+		owner = new User();
+	}
+	Complaint(int pId, char pType[], char pDescription[], Date* pDate, bool pReviewed, User* pOwner)
+	{
+		id = pId;
+		strcpy(type,pType);
+		strcpy(description,pDescription);
+		date = pDate;
+		reviewed = pReviewed;
+		owner = pOwner;
+	}
 
-	public:
-		Complaint()
-		{
-			complaintID = 0;
-			strcpy(complaintType, "Default");
-			strcpy(description, "Default");
-			date = new Date();
-			reviewed = false;
-		};
-
-		Complaint(int pComplaintID, const char pComplaintType[], const char pDescription[], Date* pDate, bool pReviewed, User* pOwner, Post* pPost)
-		{
-			complaintID = pComplaintID;
-			strcpy(complaintType, pComplaintType);
-			strcpy(description, pDescription);
-			date = pDate;
-			reviewed = pReviewed;
-			owner = pOwner;
-			post = pPost;
-		};
-
-		void setDetails(int pComplaintID, const char pComplaintType[], const char pDescription[], Date* pDate, bool pReviewed, int pOwnerID, int pPostID);
+	void setDetails(int pComplaintID, const char pComplaintType[], const char pDescription[], Date* pDate, bool pReviewed, int pOwnerID, int pPostID);
 		void showDetails();
 		User* getOwner();
 		Post* getComplainedPost();
-		~Complaint();
 };
 
 

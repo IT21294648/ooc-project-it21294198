@@ -1,27 +1,24 @@
 #pragma once
 #include <cstring>
-class Photo
-{
-	private:
-		int photoID;
-		char location[50];
-		float size;
+class Photo{
+private:
+	int id;
+	char location[100];
+	float size;
 
-	public:
-		Photo()
-		{
-			photoID = 0;
-			strcpy(location, "images/default.png");
-			size = 32.0;
-		};
-		Photo(int pPhotoID, const char pLocation[], float pSize)
-		{
-			photoID = pPhotoID;
-			strcpy(location, pLocation);
-			size = pSize;
-		};
-		void displayPhoto();
-		void showDetails();
-		~Photo();
+public:
+	Photo(){
+		id = 0;
+		strcpy(location,"default");
+		size = 0.0;
+	}
+	Photo(int pId, char pLocation[], float pSize)
+	{
+		id = pId;
+		strcpy(location,pLocation);
+		size = pSize;
+	}
+
+	void displayPhoto();
+	void showDetails();
 };
-

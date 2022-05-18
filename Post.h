@@ -29,7 +29,7 @@ public:
 		strcpy(City,"Default");
 		strcpy(District,"Default");
 		strcpy(Province,"Default");
-	};
+	}
 	Post(int pid,const char title[30],const char locate[30],const char descript[100],const char city[30],const char district[30],const char province[30]){
 		postId=0;
 		strcpy(Title,title);
@@ -38,7 +38,7 @@ public:
 		strcpy(City,city);
 		strcpy(District,district);
 		strcpy(Province,province);
-	};
+	}
 
 	void setPostId(int pid);
 	int getPostId();
