@@ -1,32 +1,34 @@
 #pragma once
-
-#include "Post.h"
-#include "Date.h"
-#include "PostType.h"
 #include <cstring>
-class RequestPost: public Post
-{
+#include "PostType.h"
+#include "Date.h"
+#include "Post.h"
+#include "User.h"
+class RequestPost : public Post{
 private:
-      float price;
-      float landArea;
-      char address[100];
-public:
-	     RequestPost()
-           {
-            price=0.0;
-            landArea=0.0;
-            strcpy(address,"default");
-           };
+	float maxPrice;
+	float minPrice;
+	float maxArea;
+	float minArea;
+	int distance;
 
- RequestPost(float rprice,float rlandArea,const char raddress[100],int pid,const char title[30],const char locate[30],const char descript[100],const char city[30]
- ,const char district[30],const char province[30],Photo rphotos[5],Date rdate,Complaint *rcomplaint[2],PostType *rpostType[1],User *ruser)
-            : Post( pid, title, locate, descript,city, district,province,rphotos,rdate,rcomplaint,rpostType,ruser)
-           {
-            price=rprice;
-            landArea=rlandArea;
-            strcpy(address,raddress);
-           };
-      void setSPdetails (float rprice , float rlandarea, const char raddress  , int rpostId , User *ruser ,  Date  rdate, Photo rphotos[10]);
+public:
+	RequestPost()	:Post(){
+		maxPrice = 0.0;
+		minPrice = 0.0;
+		maxArea = 0.0;
+		minArea = 0.0;
+		distance = 0;
+	}
+	RequestPost( float pMaxprice,  float pMinprice,  float pMaxarea,  float pMinarea,  int pDistance,  int pId, const char pTitle[], const char pLocation[], const char pCity[], const char pDistrict[], const char pProvince[], const char pDescription[],  PostType* pType,  Date* pDate,  User* pOwner)
+	:Post(pId, pTitle, pLocation, pCity, pDistrict, pProvince, pDescription, pType, pDate, pOwner)	{
+		maxPrice = pMaxprice;
+		minPrice = pMinprice;
+		maxArea = pMaxarea;
+		minArea = pMinarea;
+		distance = pDistance;
+	}
+      void setSPdetails (float rprice , float rlandarea, const char raddress );
 	void displaySPdetails();
       ~RequestPost();
 };
