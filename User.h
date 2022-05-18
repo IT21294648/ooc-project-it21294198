@@ -3,7 +3,7 @@
 #include "Photo.h"
 #include "Payment.h"
 class User{
-private:
+Protected:
 	int id;
 	char name[100];
 	char address[100];
@@ -41,4 +41,6 @@ public:
 	void makePayment(Payment payments);
 	void getUserDetails();
 	void viewPost(Post post);
+	
+	//~User();
 };
