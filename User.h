@@ -41,7 +41,7 @@ public:
 	void setDetails( int pId, const char pName[], const char pAddress[], const char pEmail[], const char pPassword[], const char pAbout[], const char pStatus[],  Photo* pProfilephoto);
 	void makePayment(Payment payments);
 	void getUserDetails();
-	void viewPost(Post post);
+	//void viewPost(Post post);
 	
 	//~User();
 };
