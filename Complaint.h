@@ -31,16 +31,7 @@ public:
 	}
 
 	void setDetails(int pComplaintID, const char pComplaintType[], const char pDescription[], Date* pDate, bool pReviewed, int pOwnerID, int pPostID);
-		void showDetails();
-		User* getOwner();
-		Post* getComplainedPost();
+	void showDetails();
+	User* getOwner();
+	Post* getComplainedPost();
 };
-
-
-
-
-
-
-
-
-
