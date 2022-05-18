@@ -1,33 +1,37 @@
 #pragma once
+#include <cstring>
 #include "Date.h"
-#include<cstring>
-
 class Payment{
-
 private:
-      char type;
-      int id;
-      char method[10];
-      float amount;
-      Date *paymentdate;
+	int id;
+	char type;
+	char method[30];
+	float amount;
+	Date* paymentDate;
 
 public:
-    Payment(){
-        type = 'A';
-        id = 0;
-        strcpy(method,"Online");
-        amount = 0.0;
-    };
-    Payment(char ptype,int pid,const char pmethod[10],float pamount){
-        type = ptype;
-        id = pid;
-        strcpy(method,pmethod);
-        amount = pamount;
-    };
+	Payment(){
+		id = 0;
+		type = 'A';
+		strcpy(method,"default");
+		amount = 0.0;
+		paymentDate = new Date();
+	}
+	Payment( int pId,  char pType, const char pMethod[],  float pAmount,  Date* pPaymentdate)
+	{
+		id = pId;
+		type = pType;
+		strcpy(method,pMethod);
+		amount = pAmount;
+		paymentDate = pPaymentdate;
+	}
+
+public:
+   
     void getAmout(float pamount);
     void enterDetails(char ptype,int pid,float pmethod);
     float calculateTotal();
     void calculateEndDate(Date edate);
     void displayDetails();
-    ~Payment();
+    //~Payment();
 };
