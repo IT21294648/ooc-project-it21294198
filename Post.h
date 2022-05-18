@@ -3,6 +3,9 @@
 #include "PostType.h"
 #include "Date.h"
 #include "User.h"
+#include "Payment.h"
+#include "Complaint.h"
+#include "Photo.h"
 class Post{
 protected:
 	int id;
