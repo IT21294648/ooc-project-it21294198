@@ -2,6 +2,7 @@
 #include <cstring>
 #include "Photo.h"
 #include "User.h"
+#include "Complaint.h"
 class Moderator : public User{
 protected:
 	int modId;
@@ -16,7 +17,7 @@ public:
 	void setModId(int mid);
 	int getModId();
 	void setModName(const char mName[30]);
-	string getModName();
+	char* getModName();
 	void manageUser(User user);
 	void reviewComplaint(Complaint comp);
   //~Moderator();
