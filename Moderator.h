@@ -3,7 +3,7 @@
 #include "Photo.h"
 #include "User.h"
 class Moderator : public User{
-private:
+protected:
 	int modId;
 	char modName[30];
 	
