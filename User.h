@@ -2,6 +2,7 @@
 #include <cstring>
 #include "Photo.h"
 #include "Payment.h"
+#include "Post.h"
 class User{
 Protected:
 	int id;
