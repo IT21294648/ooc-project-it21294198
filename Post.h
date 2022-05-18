@@ -4,7 +4,7 @@
 #include "Date.h"
 #include "User.h"
 class Post{
-private:
+protected:
 	int id;
 	char title[100];
 	char location[50];
