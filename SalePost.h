@@ -1,44 +1,30 @@
 #pragma once
-
-#include "Post.h"
-#include "Date.h"
-#include "PostType.h"
 #include <cstring>
-
-class SalePost: public Post
-{
+#include "PostType.h"
+#include "Date.h"
+#include "Post.h"
+#include "User.h"
+class SalePost : public Post{
 private:
-      float maxPrice;
-      float minPrice;
-      float maxArea;
-      float minArea;
-      int distance;
-public :
-	SalePost()
-            {
-             maxPrice=0.0;
-             minPrice=0.0;
-             maxArea=0.0;
-             minArea=0.0;
-             distance=0.0;
-            };
+	float price;
+	float area;
+	char address[100];
 
-SalePost( float smaxPrice,float sminPrice,float smaxArea,float sminArea,int sdistance,int pid,const char title[30],const char locate[30],const char descript[100]
-,const char city[30],const char district[30],const char province[30],Photo sphotos[5],Date sdate,Complaint *scomplaint[2],PostType *spostType[1],User *suser)
-	: Post( pid, title, locate, descript,city, district,province,sphotos,sdate,scomplaint,spostType,suser)
-            {
-             maxPrice=smaxPrice;
-             minPrice=sminPrice;
-             maxArea=smaxArea;
-             minArea=sminArea;
-             distance=sdistance;
-            };
+public:
+	SalePost()	:Post(){
+		price = 0.0;
+		area = 0.0;
+		strcpy(address,"default");
+	}
+	SalePost( float pPrice,  float pArea, const char pAddress[],  int pId, const char pTitle[], const char pLocation[], const char pCity[], const char pDistrict[], const char pProvince[], const char pDescription[],  PostType* pType,  Date* pDate,  User* pOwner)
+	:Post(pId, pTitle, pLocation, pCity, pDistrict, pProvince, pDescription, pType, pDate, pOwner)	{
+		price = pPrice;
+		area = pArea;
+		strcpy(address,pAddress);
+	}
 
 
-	void setPriceRange( float smaxPrice  , float sminPrice ); 
-	void setAreaRange( float smaxArea  , float sminArea ); 
-	void setRPdetails ( int sdistance );
-	void displayRPdetails();
-      ~SalePost();
+	void setSPdetails (float rprice , float rlandarea, const char raddress );
+	void displaySPdetails();
+	
 };
-
