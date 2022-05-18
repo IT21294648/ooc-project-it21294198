@@ -2,6 +2,8 @@
 #include <cstring>
 #include "Date.h"
 #include "User.h"
+#include "Post.h"
+
 class Complaint{
 private:
 	int id;
