@@ -28,8 +28,10 @@ public:
 		minArea = pMinarea;
 		distance = pDistance;
 	}
-      void setSPdetails (float rprice , float rlandarea, const char raddress );
-	void displaySPdetails();
-      ~RequestPost();
+	void setPriceRange( float smaxPrice  , float sminPrice ); 
+	void setAreaRange( float smaxArea  , float sminArea ); 
+	void setRPdetails ( int sdistance );
+	void displayRPdetails();
+
 };
 
