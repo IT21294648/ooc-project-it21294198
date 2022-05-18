@@ -4,7 +4,7 @@
 #include "Payment.h"
 #include "Post.h"
 class User{
-Protected:
+protected:
 	int id;
 	char name[100];
 	char address[100];
