@@ -3,7 +3,7 @@
 #include "Photo.h"
 #include "Payment.h"
 #include "Post.h"
-#define SIZE 50;
+#define SIZE 50
 
 class Post; //to compensate for circular dependancy
 
