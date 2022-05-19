@@ -38,7 +38,7 @@ int main()
 	Moderator moderator2(3,"Sunil Perera","27 Kandy Road Katugasthota","sunilp@gmail.com","password@123","Hello World","Available", new Photo());
 	
 	SalePost salepost1;
-	 SalePost salepost2(500000,50,"56/7d Bagya Road Gampaha",001,"Land for Sale","6.9271° N, 79.8612° E","Colombo5","Colombo","Western Province","Prime land for sale in colombo","1",new Date(),"Kamal Fernando");
+	 SalePost salepost2(500000,50,"56/7d Bagya Road Gampaha",001,"Land for Sale","6.9271° N, 79.8612° E","Colombo5","Colombo","Western Province","Prime land for sale in colombo",new PostType(),new Date(),new User());
 
 }
 
