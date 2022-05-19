@@ -26,7 +26,7 @@ int main()
 	Complaint complaint2(1, "false advertisement", "the land does not match the given details", new Date(), false, new User());
 
 	Payment payment1;
-   	Payment payment2('B',1001,"Card",500.00,new Date());
+  Payment payment2(1001,'B',"Card",500.00,new Date());
 	
 	Post post1;
 	Post post2(1,"Land for sale in Maharagama","7.2906N,80.6337E","Maharagama","Colombo","Western Province","Land available for sale in the heart of Maharagama. Price Negotiable", new PostType(), new Date(), new User());
@@ -34,6 +34,8 @@ int main()
 	Moderator moderator1;
 	Moderator moderator2(3,"Sunil Perera","27 Kandy Road Katugasthota","sunilp@gmail.com","password@123","Hello World","Available", new Photo());
 	
+
+
 }
 
 
