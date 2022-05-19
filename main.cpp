@@ -38,10 +38,14 @@ int main()
 	Moderator moderator2(3,"Sunil Perera","27 Kandy Road Katugasthota","sunilp@gmail.com","password@123","Hello World","Available", new Photo());
 	
 	SalePost salepost1;
-	 SalePost salepost2(500000,50,"56/7d Bagya Road Gampaha",001,"Land for Sale","6.9271° N, 79.8612° E","Colombo5","Colombo","Western Province","Prime land for sale in colombo",new PostType(),new Date(),new User());
+	SalePost salepost2(500000,50,"56/7d Bagya Road Gampaha",001,"Land for Sale","6.9271° N, 79.8612° E","Colombo5","Colombo","Western Province","Prime land for sale in colombo",new PostType(),new Date(),new User());
 		
 	RequestPost requestPost1;
   	RequestPost requestPost2(450000,400000,50,35,10,002,"Looking for a pieace of Land", "7.0840° N, 80.0098° E","Yakkala","Gamapaha","Western Province","A piece of land around Yakkala ,preferably within 10km",new PostType(),new Date(),new User());
+	
+	Admin admin1;
+  	Admin admin2(0001, "Sumana Shantha", "No 90, Colombo Road, Colombo", "SumanaShanthaGOAT@gmail.com", "STRONGpassword", "i am sumana shantha", "valid", new Photo());
+
 }
 
 
