@@ -25,7 +25,7 @@ int main()
 	Photo photo;
 	
 	Payment payment1;
-    	Payment payment2('B',1001,"Card",500.00);
+    	Payment payment2('B',1001,"Card",500.00,new Date());
 }
 
 
