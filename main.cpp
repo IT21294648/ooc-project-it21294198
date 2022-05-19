@@ -26,7 +26,7 @@ int main()
 	Complaint complaint2(1, "false advertisement", "the land does not match the given details", new Date(), false, new User());
 
 	Payment payment1;
-    Payment payment2('B',1001,"Card",500.00,new Date());
+   	Payment payment2('B',1001,"Card",500.00,new Date());
 }
 
 
