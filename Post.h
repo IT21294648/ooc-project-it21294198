@@ -18,6 +18,7 @@ protected:
 	PostType* type;
 	Date* date;
 	User* owner;
+	Complaint* comp;
 
 public:
 	Post(){
