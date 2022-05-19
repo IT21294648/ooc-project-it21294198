@@ -3,7 +3,7 @@
 #include "Photo.h"
 #include "Payment.h"
 #include "Post.h"
-#define SIZE 50
+#define postCount 50
 
 class Post; //to compensate for circular dependancy
 
@@ -17,7 +17,7 @@ protected:
 	char about[500];
 	char status[50];
 	Photo* profilePhoto;
-  	Post* post[SIZE];
+  	Post* post[postCount];
 
 public:
 	User(){
