@@ -27,6 +27,9 @@ int main()
 
 	Payment payment1;
    	Payment payment2(1001,'B',"Card",500.00,new Date());
+	
+	User user1;
+  	User user2(00000, "Nimal", "No 44 Kandy Road, Kandy", "nimal007@gmail.com", "n1m4Lr0X", "I am nimal", "valid", new Photo());
 }
 
 
