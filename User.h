@@ -3,6 +3,7 @@
 #include "Photo.h"
 #include "Payment.h"
 #include "Post.h"
+#define SIZE 50;
 
 class Post; //to compensate for circular dependancy
 
@@ -16,6 +17,7 @@ protected:
 	char about[500];
 	char status[50];
 	Photo* profilePhoto;
+  	Post* post[SIZE];
 
 public:
 	User(){
@@ -28,6 +30,7 @@ public:
 		strcpy(status,"default");
 		profilePhoto = new Photo();
 	}
+
 	User( int pId, const char pName[], const char pAddress[], const char pEmail[], const char pPassword[], const char pAbout[], const char pStatus[],  Photo* pProfilephoto)
 	{
 		id = pId;
