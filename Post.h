@@ -6,6 +6,7 @@
 #include "Payment.h"
 #include "Complaint.h"
 #include "Photo.h"
+#define SIZE 50;
 class Post{
 protected:
 	int id;
@@ -18,7 +19,7 @@ protected:
 	PostType* type;
 	Date* date;
 	User* owner;
-	Complaint* comp;
+	Complaint* comp[SIZE];
 
 public:
 	Post(){
