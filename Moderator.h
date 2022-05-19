@@ -5,8 +5,7 @@
 #include "Complaint.h"
 class Moderator : public User{
 protected:
-	int modId;
-	char modName[30];
+	
 	
 public:
 	Moderator()	:User(){
