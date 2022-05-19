@@ -56,7 +56,7 @@ public:
 	void addPhotos(Photo *p1,Photo *p2,Photo *p3,Photo *p4,Photo *p5);
 	void displayPostDetails();
 	void receivePayment(Payment payment);
-  //~Post();
+  	~Post(){}
 };
 
 

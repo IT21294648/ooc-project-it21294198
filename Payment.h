@@ -30,5 +30,5 @@ public:
     float calculateTotal();
     void calculateEndDate(Date edate);
     void displayDetails();
-    //~Payment();
+    ~Payment(){}
 };

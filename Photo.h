@@ -21,4 +21,5 @@ public:
 
 	void displayPhoto();
 	void showDetails();
+	~Photo(){}
 };

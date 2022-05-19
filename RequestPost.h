@@ -32,4 +32,5 @@ public:
 	void setAreaRange( float smaxArea  , float sminArea ); 
 	void setRPdetails ( int sdistance );
 	void displayRPdetails();
+	~RequestPost(){}
 };

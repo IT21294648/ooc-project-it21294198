@@ -38,4 +38,5 @@ public:
 	void showDetails();
 	User* getOwner();
 	Post* getComplainedPost();
+	~Complaint(){}
 };

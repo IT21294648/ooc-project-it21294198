@@ -19,5 +19,5 @@ public:
 	char* getModName();
 	void manageUser(User user);
 	void reviewComplaint(Complaint comp);
-  //~Moderator();
+  	~Moderator(){}
 };

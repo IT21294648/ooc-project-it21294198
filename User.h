@@ -49,5 +49,5 @@ public:
 	void getUserDetails();
 	void viewPost(Post post);
 	
-	//~User();
+	~User(){}
 };

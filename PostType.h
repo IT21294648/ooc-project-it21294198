@@ -25,4 +25,5 @@ public:
 	void setDetails(int pTypeID, float pPrice, const char pNamep[], const char pDescription[]);
 	void showDetails();
 	float calculatePrice();
+	~PostType(){}
 };

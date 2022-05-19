@@ -16,5 +16,6 @@ public:
 	void removeModerator();
 	void getDetails();
 	void manageModerator(Moderator moderator);
+	~Admin(){}
 	
 };

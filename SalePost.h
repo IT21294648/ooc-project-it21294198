@@ -25,4 +25,5 @@ public:
 	
 	void setSPdetails (float rprice , float rlandarea, const char raddress );
 	void displaySPdetails();
+	~SalePost(){}
 };
