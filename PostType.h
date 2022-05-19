@@ -14,7 +14,7 @@ public:
 		strcpy(name,"default");
 		strcpy(description,"default");
 	}
-	PostType(int pId, float pPrice, char pName[], char pDescription[])
+	PostType(int pId, float pPrice, const char pName[], const char pDescription[])
 	{
 		id = pId;
 		price = pPrice;
