@@ -35,6 +35,9 @@ int main()
 	Moderator moderator1;
 	Moderator moderator2(3,"Sunil Perera","27 Kandy Road Katugasthota","sunilp@gmail.com","password@123","Hello World","Available", new Photo());
 	
+	Admin admin1;
+  	Admin admin2(0001, "Sumana Shantha", "No 90, Colombo Road, Colombo", "SumanaShanthaGOAT@gmail.com", "STRONGpassword", "i am sumana shantha", "valid", new Photo());
+	
 }
 
 
