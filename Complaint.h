@@ -4,7 +4,7 @@
 #include "User.h"
 #include "Post.h"
 
-class Post;
+class Post; //to compensate for circular dependancy
 
 class Complaint{
 private:
@@ -24,7 +24,7 @@ public:
 		reviewed = false;
 		owner = new User();
 	}
-	Complaint(int pId, char pType[], char pDescription[], Date* pDate, bool pReviewed, User* pOwner)
+	Complaint(int pId, const char pType[], const char pDescription[], Date* pDate, bool pReviewed, User* pOwner)
 	{
 		id = pId;
 		strcpy(type,pType);
@@ -34,7 +34,7 @@ public:
 		owner = pOwner;
 	}
 
-	void setDetails(int pComplaintID, const char pComplaintType[], const char pDescription[], Date* pDate, bool pReviewed, int pOwnerID, int pPostID);
+	void setDetails(int pId, const char pType[], const char pDescription[], Date* pDate, bool pReviewed, User* pOwner);
 	void showDetails();
 	User* getOwner();
 	Post* getComplainedPost();

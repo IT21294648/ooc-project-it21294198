@@ -12,7 +12,7 @@ public:
 		strcpy(location,"default");
 		size = 0.0;
 	}
-	Photo(int pId, char pLocation[], float pSize)
+	Photo(int pId, const char pLocation[], float pSize)
 	{
 		id = pId;
 		strcpy(location,pLocation);

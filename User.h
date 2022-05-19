@@ -4,7 +4,7 @@
 #include "Payment.h"
 #include "Post.h"
 
-class Post;
+class Post; //to compensate for circular dependancy
 
 class User{
 protected:
