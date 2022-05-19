@@ -1,5 +1,4 @@
 #pragma once
-#include <cstring>
 #include "Photo.h"
 #include "User.h"
 #include "Complaint.h"

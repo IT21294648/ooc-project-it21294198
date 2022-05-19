@@ -1,5 +1,4 @@
 #pragma once
-#include <cstring>
 #include "Photo.h"
 #include "Moderator.h"
 class Admin : public Moderator{

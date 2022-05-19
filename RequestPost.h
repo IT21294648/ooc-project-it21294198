@@ -1,5 +1,4 @@
 #pragma once
-#include <cstring>
 #include "PostType.h"
 #include "Date.h"
 #include "Post.h"

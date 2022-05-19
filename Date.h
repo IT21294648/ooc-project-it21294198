@@ -1,5 +1,4 @@
 #pragma once
-#include <cstring>
 class Date{
 private:
 	int day;
