@@ -23,7 +23,9 @@ int main()
 	PostType postType;
 	Date date;
 	Photo photo;
-	Payment payment;
+	
+	Payment payment1;
+    	Payment payment2('B',1001,"Card",500.00);
 }
 
 
