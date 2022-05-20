@@ -1,3 +1,8 @@
+//Name: H.A.R.S. Hapuarachchi
+//IT Number: it21296246
+//Center: Malabe
+//Group: MLB_05.02_09
+
 #pragma once
 #include <cstring>
 class PostType{
@@ -25,4 +30,5 @@ public:
 	void setDetails(int pTypeID, float pPrice, const char pNamep[], const char pDescription[]);
 	void showDetails();
 	float calculatePrice();
+	~PostType(){}
 };

@@ -1,5 +1,4 @@
 #pragma once
-#include <cstring>
 #include "PostType.h"
 #include "Date.h"
 #include "Post.h"
@@ -32,4 +31,5 @@ public:
 	void setAreaRange( float smaxArea  , float sminArea ); 
 	void setRPdetails ( int sdistance );
 	void displayRPdetails();
+	~RequestPost(){}
 };

@@ -1,5 +1,4 @@
 #pragma once
-#include <cstring>
 #include "Photo.h"
 #include "User.h"
 #include "Complaint.h"
@@ -19,5 +18,5 @@ public:
 	char* getModName();
 	void manageUser(User user);
 	void reviewComplaint(Complaint comp);
-  //~Moderator();
+  	~Moderator(){}
 };
