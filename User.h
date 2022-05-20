@@ -1,5 +1,3 @@
-/*Name: M.D.M.C.L Wickramarathne	IT number: IT21294648		Center: Malabe		Group:MLB_05.02_09*/
-
 #pragma once
 #include <cstring>
 #include "Photo.h"
